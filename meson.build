@@ -1,4 +1,4 @@
-project('vkquake', 'c', default_options : ['c_std=gnu11', 'buildtype=release'])
+project('quatana', 'c', default_options : ['c_std=gnu11', 'buildtype=release'])
 
 shaders = [
     'Shaders/alias.frag',
@@ -226,4 +226,4 @@ incdirs = [
     'Quake/mimalloc',
 ]
 
-executable('vkquake', [srcs, shaders_c], dependencies : deps, include_directories : incdirs, c_args : cflags, c_pch: ['Quake/quakedef.h', 'Quake/quakedef.c'])
+executable('quatana', [srcs, shaders_c], dependencies : deps, include_directories : incdirs, c_args : cflags, c_pch: ['Quake/quakedef.h', 'Quake/quakedef.c'])
